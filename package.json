@@ -1,0 +1,35 @@
+{
+  "name": "wow",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Nick Balestra",
+    "email": "nick@balestra.ch"
+  },
+  "main": "build/index.js",
+  "files": [
+    "build"
+  ],
+  "bin": {
+    "wow": "./bin/wow.js"
+  },
+  "scripts": {
+    "build": "ncc build src/cli --out build --minify",
+    "dev": "ncc build src/cli --out build --watch"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chalk": "^2.4.2",
+    "clipboardy": "^2.0.0",
+    "dotenv": "^8.0.0",
+    "form-data": "^2.3.3",
+    "import-local": "^2.0.0",
+    "listr": "^0.14.3",
+    "ora": "^3.4.0",
+    "recursive-readdir": "^2.2.2",
+    "yargs": "^13.2.2"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.18.2"
+  }
+}

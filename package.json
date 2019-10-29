@@ -18,7 +18,7 @@
     "dev": "ncc build src/cli --out build --watch"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "chalk": "^2.4.2",
     "clipboardy": "^2.0.0",
     "dotenv": "^8.0.0",
